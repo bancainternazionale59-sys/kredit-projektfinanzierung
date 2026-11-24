@@ -36,7 +36,21 @@ h2{color:#172d4a;font-size:29px;margin-bottom:20px;text-align:center}
 .conditions{background:#eaf0f7;padding:45px 20px;text-align:center}.conditions ul{list-style:none;max-width:650px;margin:auto;text-align:left}.conditions li{padding:9px}
 .form-section{background:white;padding:40px;border-radius:14px;max-width:750px;margin:auto;box-shadow:0 5px 25px rgba(0,0,0,.07)}
 .form-section label{display:block;margin:17px 0 7px;font-weight:bold}
-.form-section input,.form-section select,.form-section textarea{width:100%;padding:14px;border:1px solid #cbd3df;border-radius:7px;font-size:15px}
+.form-section input:not([type="checkbox"]),
+.form-section select,
+.form-section textarea{
+width:100%;
+padding:14px;
+border:1px solid #cbd3df;
+border-radius:7px;
+font-size:15px;
+}
+
+.form-section input[type="checkbox"]{
+width:auto;
+padding:0;
+margin-right:8px;
+}
 .form-section textarea{min-height:120px}.form-section button{width:100%;padding:16px;background:#172d4a;color:white;border:none;border-radius:7px;margin-top:25px;font-size:16px;cursor:pointer}
 .form-section button:hover{background:#28496c}.notice{font-size:13px;color:#626d7c;margin-top:15px}
 footer{background:#101e35;color:white;padding:35px 20px;text-align:center}footer a{color:#e5c77c}
