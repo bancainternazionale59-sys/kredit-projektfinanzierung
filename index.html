@@ -114,13 +114,16 @@ footer{background:#101e35;color:white;padding:35px 20px;text-align:center}footer
       <input type="text" id="nachname" name="Nachname"
              placeholder="Ihr Nachname"
              autocomplete="family-name" required>
-<script>
-document.querySelector("form").addEventListener("submit", function() {
-    document.getElementById("replyto").value =
-        document.getElementById("email").value;
-});
-</script>
-      <<label for="email">E-Mail-Adresse *</label>
+<label for="email">E-Mail-Adresse *</label>
+
+<input type="email"
+       id="email"
+       name="email"
+       placeholder="name@beispiel.de"
+       autocomplete="email"
+       required>
+
+<input type="hidden" name="_replyto" id="replyto">
 
 <input type="email"
        id="email"
