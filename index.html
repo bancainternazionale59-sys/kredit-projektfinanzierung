@@ -211,5 +211,11 @@ footer{background:#101e35;color:white;padding:35px 20px;text-align:center}footer
   <p>Impressum | Datenschutz | Rechtliche Hinweise</p>
   <p class="notice">Vor Veröffentlichung müssen Betreiberidentität, vollständige Kontaktdaten, Datenschutzinformationen und gegebenenfalls erforderliche Finanzdienstleistungserlaubnisse ergänzt und geprüft werden.</p>
 </footer>
+  <script>
+document.querySelector("form").addEventListener("submit", function() {
+  document.getElementById("replyto").value =
+    document.getElementById("email").value;
+});
+</script>
 </body>
 </html>
